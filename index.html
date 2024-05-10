@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<script src="logic.js"></script>
+</head>
+<body class="style-light-grey style-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="style-sidebar style-collapse style-white style-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="style-container">
+      <a href="#" onclick="close()" class="style-hide-large style-right style-jumbo style-padding style-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="public/images/me.jpg" style="width:45%;" class="style-round"><br><br>
+      <h4><b>Laure Luyckx</b></h4>
+    </div>
+    <div class="style-bar-block">
+      <a href="#portfolio" onclick="close()" class="style-bar-item style-button style-padding style-text-teal"><i class="fa fa-th-large fa-fw style-margin-right"></i>MY WORK</a> 
+      <a href="#about" onclick="close()" class="style-bar-item style-button style-padding"><i class="fa fa-user fa-fw style-margin-right"></i>ABOUT</a> 
+      <a href="#contact" onclick="close()" class="style-bar-item style-button style-padding"><i class="fa fa-envelope fa-fw style-margin-right"></i>CONTACT</a>
+    </div>
+    <div class="style-panel style-large">
+      <a href="https://be.linkedin.com/in/laure-luyckx-83b9041b7" target="_blank"><i class="fa fa-linkedin style-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/laure.drawings/" target="_blank"><i class="fa fa-instagram style-hover-opacity"></i></a>
+      <a href="https://www.pinterest.com/lluyckx97" target="_blank"><i class="fa fa-pinterest-p style-hover-opacity"></i></a>
+      <a href="https://twitter.com/lluyckx97" target="_blank"><i class="fa fa-twitter style-hover-opacity"></i></a>
+    </div>
+  </nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="style-overlay style-hide-large style-animate-opacity" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="style-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <span class="style-button style-hide-large style-xxlarge style-hover-text-grey" onclick="open()"><i class="fa fa-bars"></i></span>
+    <div class="style-container">
+    <h1><b>My Work</b></h1>
+    <div class="style-section style-bottombar style-padding-5"></div>
+    </div>
+  </header>
+  
+<!-- First Photo Grid -->
+<div class="style-row-padding" id="photoGrid">
+    <!-- Images will be dynamically inserted here -->
+  </div>
+  
+  <!-- Pagination -->
+  <div class="style-center style-padding-32">
+    <div class="style-bar" id="pagination">
+      <a href="#" class="style-bar-item style-button style-hover-black" onclick="previousPage()">«</a>
+      <!-- Page buttons will be dynamically inserted here -->
+      <a href="#" class="style-bar-item style-button style-hover-black" onclick="nextPage()">»</a>
+    </div>
+  </div>
+
+  <div class="style-container style-padding-large" style="margin-bottom:32px">
+    <h4 id="about"><b>About Me</b></h4>
+    <p>My name is Laure Luyckx, I'm a graphic designer with a unique perspective and keen eye for detail.
+      <br>
+      Being autistic shapes both my life and work approach.
+      <br>
+      Besides design, I enjoy drawing, cooking, and video creation.
+      <br>
+      My goal is to specialize in branding and logos, contributing to Wetteren or Ghent's visual landscape with creativity and precision.</p>
+    <hr>
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>Illustrator</p>
+    <div class="style-grey">
+      <div class="style-container style-dark-grey style-padding style-center" style="width:80%">80%</div>
+    </div>
+    <p>InDesign</p>
+    <div class="style-grey">
+      <div class="style-container style-dark-grey style-padding style-center" style="width:70%">70%</div>
+    </div>
+    <p>Photoshop</p>
+    <div class="style-grey">
+      <div class="style-container style-dark-grey style-padding style-center" style="width:60%">60%</div>
+    </div>
+    <p>After Effects</p>
+    <div class="style-grey">
+      <div class="style-container style-dark-grey style-padding style-center" style="width:50%">50%</div>
+    </div>
+    <p>
+        <a href="public/resume.pdf" download>
+            <button class="style-button style-dark-grey style-padding-large style-margin-top style-margin-bottom">
+                <i class="fa fa-download style-margin-right"></i>Download Resume
+            </button>
+        </a>
+        
+    </p>
+    <hr>
+  
+  <!-- Contact Section -->
+  <div class="style-container style-padding-large style-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="style-row-padding style-center style-padding-24" style="margin:0 -16px">
+        <div class="style-third style-dark-grey">
+            <p><a href="mailto:luyckx.laure@gmail.com"><i class="fa fa-envelope style-xxlarge style-text-light-grey"></i></a></p>
+            <p><a href="mailto:luyckx.laure@gmail.com">luyckx.laure@gmail.com</a></p>
+        </div>
+        
+        <div class="style-third style-teal">
+            <p><a href="https://www.google.com/maps?q=Wetteren, Belgium" target="_blank"><i class="fa fa-map-marker style-xxlarge style-text-light-grey"></i></a></p>
+            <p><a href="https://www.google.com/maps?q=Wetteren, Belgium" target="_blank">Wetteren, Belgium</a></p>
+        </div>
+        
+      <div class="style-third style-dark-grey">
+        <p><i class="fa fa-phone style-xxlarge style-text-light-grey"></i></p>
+        <p>0032470536301</p>
+      </div>
+    </div>
+  </div>
+  <div class="style-black style-center style-padding-24">Let's Connect !</div>
+<!-- End page content -->
+</div>
+</body>
+</html>
