@@ -2,12 +2,8 @@ var allImages = [];
 var totalAllPages = 0;
 var currentPage = 1;
 var imagesPerPage = 3;
-
-<<<<<<< HEAD
 var totalImages = 39;
-=======
-var totalImages = 48;
->>>>>>> parent of c56b7d2 (added images)
+
 var totalAllPages = Math.ceil(totalImages / imagesPerPage);
 
 for (var i = 0; i < totalImages; i++) {
