@@ -3,7 +3,7 @@ var totalAllPages = 0;
 var currentPage = 1;
 var imagesPerPage = 3;
 
-var totalImages = 28;
+var totalImages = 29;
 var totalAllPages = Math.ceil(totalImages / imagesPerPage);
 
 for (var i = 0; i < totalImages; i++) {
