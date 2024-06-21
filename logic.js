@@ -7,7 +7,7 @@ var totalImages = 48;
 var totalAllPages = Math.ceil(totalImages / imagesPerPage);
 
 for (var i = 0; i < totalImages; i++) {
-  allImages.push("public/images/" + i + ".png");
+  allImages.push("public/images/" + i + ".png" ".jpg");
 }
 
 function previousPage() {
